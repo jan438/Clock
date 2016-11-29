@@ -1,4 +1,5 @@
 'use strict';
+const hourrotation = 360 / 12;
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -468,12 +469,13 @@ var Deck = (function () {
 		var $el = _card4.$el;
 		_card4.Clock = function (i, len, cb) {
 			var delay = i * 250;
+			var rotation = Math.floor(i / 4) * hourrotation;
 			_card4.animateTo({
 				delay: delay,
 				duration: 250,
 				x: Math.round((i - 2.05) * 70 * __fontSize / 16),
 				y: Math.round(-110 * __fontSize / 16),
-				rot: 0,
+				rot: rotation,
 				onStart: function onStart() {
 					$el.style.zIndex = len - 1 + i;
 				},
