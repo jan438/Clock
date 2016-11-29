@@ -469,7 +469,9 @@ var Deck = (function () {
 		var $el = _card4.$el;
 		_card4.Clock = function (i, len, cb) {
 			var delay = i * 250;
-			var rotation = Math.floor(i / 4) * hourrotation;
+			var rotation;
+			if (i < 48)  rotation = Math.floor(i / 4) * hourrotation;
+			else rotation = 0;
 			_card4.animateTo({
 				delay: delay,
 				duration: 250,
