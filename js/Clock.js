@@ -448,41 +448,41 @@ var Deck = (function () {
   };
   var __fontSize;
   var Clock = {
-    deck: function deck(_deck4) {
-      _deck4.Clock = _deck4.queued(Clock);
-      function Clock(next) {
-        var cards = _deck4.cards;
-        var len = cards.length;
-        __fontSize = fontSize();
-        cards.slice(-5).reverse().forEach(function (card, i) {
-          card.Clock(i, len, function (i) {
-            card.setSide('front');
-            if (i === 4) {
-              next();
-            }
-          });
-        });
-      }
-    },
-    card: function card(_card4) {
-      var $el = _card4.$el;
-      _card4.Clock = function (i, len, cb) {
-        var delay = i * 250;
-        _card4.animateTo({
-          delay: delay,
-          duration: 250,
-          x: Math.round((i - 2.05) * 70 * __fontSize / 16),
-          y: Math.round(-110 * __fontSize / 16),
-          rot: 0,
-          onStart: function onStart() {
-            $el.style.zIndex = len - 1 + i;
-          },
-          onComplete: function onComplete() {
-            cb(i);
-          }
-        });
-      };
-    }
+	deck: function deck(_deck4) {
+		_deck4.Clock = _deck4.queued(Clock);
+		function Clock(next) {
+			var cards = _deck4.cards;
+			var len = cards.length;
+			__fontSize = fontSize();
+			cards.slice(-52).reverse().forEach(function (card, i) {
+				card.Clock(i, len, function (i) {
+					card.setSide('back');
+					if (i === 51) {
+						next();
+					}
+				});
+			});
+		}
+	},
+	card: function card(_card4) {
+		var $el = _card4.$el;
+		_card4.Clock = function (i, len, cb) {
+			var delay = i * 250;
+			_card4.animateTo({
+				delay: delay,
+				duration: 250,
+				x: Math.round((i - 2.05) * 70 * __fontSize / 16),
+				y: Math.round(-110 * __fontSize / 16),
+				rot: 0,
+				onStart: function onStart() {
+					$el.style.zIndex = len - 1 + i;
+				},
+				onComplete: function onComplete() {
+					cb(i);
+				}
+			});
+		};
+	}
   };
   var intro = {
     deck: function deck(_deck5) {
