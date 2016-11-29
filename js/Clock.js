@@ -1,5 +1,19 @@
 'use strict';
 const hourrotation = 360 / 12;
+var cardposition = new Array(13);
+cardposition[0] = [0, -360];
+cardposition[1] = [120, -240];
+cardposition[2] = [240, -120];
+cardposition[3] = [360, 0];
+cardposition[4] = [240, 120];
+cardposition[5] = [120, 240];
+cardposition[6] = [0, 360];
+cardposition[7] = [-120, 240];
+cardposition[8] = [-240, 120];
+cardposition[9] = [-360, 0];
+cardposition[10] = [-240, -120];
+cardposition[11] = [-120, -240];
+cardposition[12] = [0, 0];
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -470,13 +484,16 @@ var Deck = (function () {
 		_card4.Clock = function (i, len, cb) {
 			var delay = i * 250;
 			var rotation;
+			var pos = cardposition[Math.floor(i / 4)];
+			var xpos = pos[0];
+			var ypos = pos[1];
 			if (i < 48)  rotation = Math.floor(i / 4) * hourrotation;
 			else rotation = 0;
 			_card4.animateTo({
 				delay: delay,
 				duration: 250,
-				x: Math.round((i - 2.05) * 70 * __fontSize / 16),
-				y: Math.round(-110 * __fontSize / 16),
+				x: xpos,
+				y: ypos,
 				rot: rotation,
 				onStart: function onStart() {
 					$el.style.zIndex = len - 1 + i;
