@@ -126,28 +126,29 @@ var Deck = (function () {
   }
   var maxZ = 52;
   function _card(i) {
-    var transform = prefix('transform');
-    var rank = i % 13 + 1;
-    var suit = i / 13 | 0;
-    var z = (52 - i) / 4;
-    var $el = createElement('div');
-    var $face = createElement('div');
-    var $back = createElement('div');
-    var isDraggable = false;
-    var isFlippable = false;
-    var self = { i: i, rank: rank, suit: suit, pos: i, $el: $el, mount: mount, unmount: unmount, setSide: setSide };
-    var modules = Deck.modules;
-    var module;
-    $face.classList.add('face');
-    $back.classList.add('back');
-    $el.style[transform] = translate(-z + 'px', -z + 'px');
-    self.x = -z;
-    self.y = -z;
-    self.z = z;
-    self.rot = 0;
-    self.setSide('back');
-    addListener($el, 'mousedown', onMousedown);
-    addListener($el, 'touchstart', onMousedown);
+	var transform = prefix('transform');
+	var rank = i % 13 + 1;
+	var suit = i / 13 | 0;
+	var z = (52 - i) / 4;
+	var $el = createElement('div');
+	$el.id = 'card' + i;
+	var $face = createElement('div');
+	var $back = createElement('div');
+	var isDraggable = false;
+	var isFlippable = false;
+	var self = { i: i, rank: rank, suit: suit, pos: i, $el: $el, mount: mount, unmount: unmount, setSide: setSide };
+	var modules = Deck.modules;
+	var module;
+	$face.classList.add('face');
+	$back.classList.add('back');
+	$el.style[transform] = translate(-z + 'px', -z + 'px');
+	self.x = -z;
+	self.y = -z;
+	self.z = z;
+	self.rot = 0;
+	self.setSide('back');
+	addListener($el, 'mousedown', onMousedown);
+	addListener($el, 'touchstart', onMousedown);
     for (module in modules) {
       addModule(modules[module]);
     }
