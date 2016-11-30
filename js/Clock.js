@@ -225,7 +225,10 @@ var Deck = (function () {
 	var startPos = {};
 	var pos = {};
 	var starttime = Date.now();
-	console.log("Card: " + $el.id);
+	if (self.x === 0 && self.y === 0) {
+		console.log("Card: " + $el.id);
+		self.setSide("front");
+	}
 	e.preventDefault();
       if (e.type === 'mousedown') {
         startPos.x = pos.x = e.clientX;
