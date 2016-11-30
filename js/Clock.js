@@ -222,10 +222,11 @@ var Deck = (function () {
       module.card && module.card(self);
     }
     function onMousedown(e) {
-      var startPos = {};
-      var pos = {};
-      var starttime = Date.now();
-      e.preventDefault();
+	var startPos = {};
+	var pos = {};
+	var starttime = Date.now();
+	console.log("Card: " + $el.id);
+	e.preventDefault();
       if (e.type === 'mousedown') {
         startPos.x = pos.x = e.clientX;
         startPos.y = pos.y = e.clientY;
@@ -571,7 +572,6 @@ var Deck = (function () {
       return function () {
         var self = this;
         var args = arguments;
-
         queue(function (next) {
           action.apply(self, array.concat.apply(next, args));
         });
