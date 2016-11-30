@@ -14,6 +14,7 @@ cardposition[9] = [-360, 0];
 cardposition[10] = [-240, -120];
 cardposition[11] = [-120, -240];
 cardposition[12] = [0, 0];
+var clockcards;
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -466,6 +467,7 @@ var Deck = (function () {
 	deck: function deck(_deck4) {
 		_deck4.Clock = _deck4.queued(Clock);
 		function Clock(next) {
+			clockcards = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
 			var cards = _deck4.cards;
 			var len = cards.length;
 			__fontSize = fontSize();
@@ -484,11 +486,13 @@ var Deck = (function () {
 		_card4.Clock = function (i, len, cb) {
 			var delay = i * 250;
 			var rotation;
-			var pos = cardposition[Math.floor(i / 4)];
+			var index = Math.floor(i / 4);
+			var pos = cardposition[index];
 			var xpos = pos[0];
 			var ypos = pos[1];
-			if (i < 48)  rotation = Math.floor(i / 4) * hourrotation;
+			if (i < 48)  rotation = index * hourrotation;
 			else rotation = 0;
+			clockcards[index].push(_card4);
 			_card4.animateTo({
 				delay: delay,
 				duration: 250,
