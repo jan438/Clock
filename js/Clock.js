@@ -2,17 +2,17 @@
 const hourrotation = 360 / 12;
 var cardposition = new Array(13);
 cardposition[0] = [0, -360];
-cardposition[1] = [120, -240];
-cardposition[2] = [240, -120];
+cardposition[1] = [180, -311];
+cardposition[2] = [311, -180];
 cardposition[3] = [360, 0];
-cardposition[4] = [240, 120];
-cardposition[5] = [120, 240];
+cardposition[4] = [311, 180];
+cardposition[5] = [180, 311];
 cardposition[6] = [0, 360];
-cardposition[7] = [-120, 240];
-cardposition[8] = [-240, 120];
+cardposition[7] = [-180, 311];
+cardposition[8] = [-311, 180];
 cardposition[9] = [-360, 0];
-cardposition[10] = [-240, -120];
-cardposition[11] = [-120, -240];
+cardposition[10] = [-311, -180];
+cardposition[11] = [-180, -311];
 cardposition[12] = [0, 0];
 var clockcards;
 var Deck = (function () {
