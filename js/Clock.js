@@ -240,7 +240,7 @@ var Deck = (function () {
 				y: cardposition[cardrank][1],
 				rot: hourrotation * cardrank,
 				onStart: function onStart() {
-					$el.style.zIndex = maxZ++;
+					$el.style.zIndex = clockcards[cardrank][0].$el.style.zIndex - 1;
 				},
 				onComplete: function onComplete() {
 				}
