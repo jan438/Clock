@@ -226,44 +226,70 @@ var Deck = (function () {
 	var pos = {};
 	var starttime = Date.now();
 	if (self.x === 0 && self.y === 0) {
-		console.log("Card13: " + $el.id);
-		self.setSide("front");
+		if (clockcards[12].length > 0) {
+			console.log("Card13: " + $el.id);
+			self.setSide("front");
+		}
 	}
 	if (self.x === 0 && self.y === -360) {
-		console.log("Card0: " + $el.id);
+		if (clockcards[0].length > 0) {
+			console.log("Card0: " + $el.id);
+		}
 	}
 	if (self.x === 180 && self.y === -311) {
-		console.log("Card1: " + $el.id);
+		if (clockcards[1].length > 0) {
+			console.log("Card1: " + $el.id);
+		}
 	}
 	if (self.x === 311 && self.y === -180) {
-		console.log("Card2: " + $el.id);
+		if (clockcards[2].length > 0) {
+			console.log("Card2: " + $el.id);
+		}
 	}
 	if (self.x === 360 && self.y === 0) {
-		console.log("Card3: " + $el.id);
+		if (clockcards[3].length > 0) {
+			console.log("Card3: " + $el.id);
+		}
 	}
 	if (self.x === 311 && self.y === 180) {
-		console.log("Card4: " + $el.id);
+		if (clockcards[4].length > 0) {
+			console.log("Card4: " + $el.id);
+		}
 	}
 	if (self.x === 180 && self.y === 311) {
-		console.log("Card5: " + $el.id);
+		if (clockcards[5].length > 0) {
+			console.log("Card5: " + $el.id);
+		}
 	}
 	if (self.x === 0 && self.y === 360) {
-		console.log("Card6: " + $el.id);
+		if (clockcards[6].length > 0) {
+			console.log("Card6: " + $el.id);
+		}
 	}
 	if (self.x === -180 && self.y === 311) {
-		console.log("Card7: " + $el.id);
+		if (clockcards[7].length > 0) {
+			console.log("Card7: " + $el.id);
+		}
 	}
 	if (self.x === -311 && self.y === 180) {
-		console.log("Card8: " + $el.id);
+		if (clockcards[8].length > 0) {
+			console.log("Card8: " + $el.id);
+		}
 	}
 	if (self.x === -360 && self.y === 0) {
-		console.log("Card9: " + $el.id);
+		if (clockcards[9].length > 0) {
+			console.log("Card9: " + $el.id);
+		}
 	}
 	if (self.x === -311 && self.y === -180) {
-		console.log("Card10: " + $el.id);
+		if (clockcards[10].length > 0) {
+			console.log("Card10: " + $el.id);
+		}
 	}
 	if (self.x === -180 && self.y === -311) {
-		console.log("Card11: " + $el.id);
+		if (clockcards[11].length > 0) {
+			console.log("Card11: " + $el.id);
+		}
 	}
 	e.preventDefault();
       if (e.type === 'mousedown') {
