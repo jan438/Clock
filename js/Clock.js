@@ -15,6 +15,7 @@ cardposition[10] = [-311, -180];
 cardposition[11] = [-180, -311];
 cardposition[12] = [0, 0];
 var clockcards;
+var playedcards;
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -229,6 +230,21 @@ var Deck = (function () {
 		if (clockcards[12].length > 0) {
 			console.log("Card13: " + $el.id);
 			self.setSide("front");
+			var cardrank = self.rank;
+			if (cardrank === 12) cardrank = 0;
+			if (cardrank === 13) cardrank = 12;
+			self.animateTo({
+				delay: 250,
+				duration: 250,
+				x: cardposition[cardrank][0],
+				y: cardposition[cardrank][1],
+				rot: hourrotation * cardrank,
+				onStart: function onStart() {
+					$el.style.zIndex = maxZ++;
+				},
+				onComplete: function onComplete() {
+				}
+			});
 		}
 	}
 	if (self.x === 0 && self.y === -360) {
@@ -535,6 +551,7 @@ var Deck = (function () {
 		_deck4.Clock = _deck4.queued(Clock);
 		function Clock(next) {
 			clockcards = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
+			playedcards = 0;
 			var cards = _deck4.cards;
 			var len = cards.length;
 			__fontSize = fontSize();
