@@ -234,6 +234,7 @@ var Deck = (function () {
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
 			clockcards[cardrank].splice(0, 0, self);
+			clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 			clockcards[12].splice(clockcards[12].length - 1, 1);
 			self.animateTo({
 				delay: 250,
