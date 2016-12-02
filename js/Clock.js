@@ -233,6 +233,7 @@ var Deck = (function () {
 			var cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
+			clockcards[cardrank].splice(0, 0, self);
 			self.animateTo({
 				delay: 250,
 				duration: 250,
@@ -240,7 +241,7 @@ var Deck = (function () {
 				y: cardposition[cardrank][1],
 				rot: hourrotation * cardrank,
 				onStart: function onStart() {
-					$el.style.zIndex = clockcards[cardrank][0].$el.style.zIndex - 1;
+					$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
 				},
 				onComplete: function onComplete() {
 				}
