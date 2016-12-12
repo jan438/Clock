@@ -298,7 +298,7 @@ var Deck = (function () {
 	}
 	if (self.x === 0 && self.y === -360) {
 		if (clockcards[0].length > 0) {
-			console.log("Card0: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card0: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -306,7 +306,7 @@ var Deck = (function () {
 	}
 	if (self.x === 180 && self.y === -311) {
 		if (clockcards[1].length > 0) {
-			console.log("Card1: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card1: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -314,7 +314,7 @@ var Deck = (function () {
 	}
 	if (self.x === 311 && self.y === -180) {
 		if (clockcards[2].length > 0) {
-			console.log("Card2: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card2: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -322,7 +322,7 @@ var Deck = (function () {
 	}
 	if (self.x === 360 && self.y === 0) {
 		if (clockcards[3].length > 0) {
-			console.log("Card3: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card3: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -330,7 +330,7 @@ var Deck = (function () {
 	}
 	if (self.x === 311 && self.y === 180) {
 		if (clockcards[4].length > 0) {
-			console.log("Card4: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card4: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -338,7 +338,7 @@ var Deck = (function () {
 	}
 	if (self.x === 180 && self.y === 311) {
 		if (clockcards[5].length > 0) {
-			console.log("Card5: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card5: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -346,7 +346,7 @@ var Deck = (function () {
 	}
 	if (self.x === 0 && self.y === 360) {
 		if (clockcards[6].length > 0) {
-			console.log("Card6: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card6: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -354,7 +354,7 @@ var Deck = (function () {
 	}
 	if (self.x === -180 && self.y === 311) {
 		if (clockcards[7].length > 0) {
-			console.log("Card7: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card7: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -362,7 +362,7 @@ var Deck = (function () {
 	}
 	if (self.x === -311 && self.y === 180) {
 		if (clockcards[8].length > 0) {
-			console.log("Card8: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card8: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -370,7 +370,7 @@ var Deck = (function () {
 	}
 	if (self.x === -360 && self.y === 0) {
 		if (clockcards[9].length > 0) {
-			console.log("Card9: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card9: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -378,7 +378,7 @@ var Deck = (function () {
 	}
 	if (self.x === -311 && self.y === -180) {
 		if (clockcards[10].length > 0) {
-			console.log("Card10: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card10: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
@@ -386,7 +386,7 @@ var Deck = (function () {
 	}
 	if (self.x === -180 && self.y === -311) {
 		if (clockcards[11].length > 0) {
-			console.log("Card11: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card11: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
 			if (cardrank === 13) cardrank = 12;
