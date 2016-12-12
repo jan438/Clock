@@ -17,6 +17,51 @@ cardposition[12] = [0, 0];
 var clockcards;
 var playedcards;
 var cardrank;
+function cardtosymbols(card) {
+	var symbols = "";
+	var symbol1 = "";
+	var symbol2 = "";
+	switch (card.suit) {
+		case 0: symbol1 = "♠";
+			break;
+		case 1: symbol1 = "♥";
+			break;
+		case 2: symbol1 = "♣";
+			break;
+		case 3: symbol1 = "♦";
+			break;
+	}
+	switch (card.rank) {
+		case 13:symbol2 = "H";
+			break;
+		case 12:symbol2 = "V";
+			break;
+		case 11:symbol2 = "B";
+			break;
+		case 10:symbol2 = "0";
+			break;
+		case 9: symbol2 = "9";
+			break;
+		case 8: symbol2 = "8";
+			break;
+		case 7: symbol2 = "7";
+			break;
+		case 6: symbol2 = "6";
+			break;
+		case 5: symbol2 = "5";
+			break;
+		case 4: symbol2 = "4";
+			break;
+		case 3: symbol2 = "3";
+			break;
+		case 2: symbol2 = "2";
+			break;
+		case 1: symbol2 = "A";
+			break;
+	}
+	symbols = symbols + symbol1 + symbol2;
+	return symbols;
+}
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -229,7 +274,7 @@ var Deck = (function () {
 	var starttime = Date.now();
 	if (self.x === 0 && self.y === 0) {
 		if (clockcards[12].length > 0) {
-			console.log("Card13: " + $el.id + " z: " + $el.style.zIndex);
+			console.log("Card13: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 			self.setSide("front");
 			cardrank = self.rank;
 			if (cardrank === 12) cardrank = 0;
