@@ -276,7 +276,6 @@ var Deck = (function () {
 		if (self.x === 0 && self.y === 0) {
 			if (clockcards[12].length > 0) {
 				console.log("Card13: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-				self.setSide("front");
 				cardrank = self.rank;
 				if (cardrank === 12) cardrank = 0;
 				if (cardrank === 13) cardrank = 12;
