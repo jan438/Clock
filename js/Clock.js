@@ -296,6 +296,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[12].splice(clockcards[12].length - 1, 1);
+					clockcards[12][clockcards[12].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === 0 && self.y === -360) {
@@ -308,6 +328,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[0].splice(clockcards[0].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[0].splice(clockcards[0].length - 1, 1);
+					clockcards[0][clockcards[0].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -346,6 +386,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[1].splice(clockcards[1].length - 1, 1);
+					clockcards[1][clockcards[1].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === 311 && self.y === -180) {
@@ -358,6 +418,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[2].splice(clockcards[2].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[2].splice(clockcards[2].length - 1, 1);
+					clockcards[2][clockcards[2].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -396,6 +476,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[3].splice(clockcards[3].length - 1, 1);
+					clockcards[3][clockcards[3].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === 311 && self.y === 180) {
@@ -408,6 +508,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[4].splice(clockcards[4].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[4].splice(clockcards[4].length - 1, 1);
+					clockcards[4][clockcards[4].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -446,6 +566,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[5].splice(clockcards[5].length - 1, 1);
+					clockcards[5][clockcards[5].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === 0 && self.y === 360) {
@@ -458,6 +598,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[6].splice(clockcards[6].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[6].splice(clockcards[6].length - 1, 1);
+					clockcards[6][clockcards[6].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -496,6 +656,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[7].splice(clockcards[7].length - 1, 1);
+					clockcards[7][clockcards[7].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === -311 && self.y === 180) {
@@ -508,6 +688,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[8].splice(clockcards[8].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[8].splice(clockcards[8].length - 1, 1);
+					clockcards[8][clockcards[8].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -546,6 +746,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[9].splice(clockcards[9].length - 1, 1);
+					clockcards[9][clockcards[9].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === -311 && self.y === -180) {
@@ -571,6 +791,26 @@ var Deck = (function () {
 						}
 					});
 				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[10].splice(clockcards[10].length - 1, 1);
+					clockcards[10][clockcards[10].length - 1].setSide("front");
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
 			}
 		}
 		if (self.x === -180 && self.y === -311) {
@@ -583,6 +823,26 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[11].splice(clockcards[11].length - 1, 1);
+					self.animateTo({
+						delay: 250,
+						duration: 250,
+						x: cardposition[cardrank][0],
+						y: cardposition[cardrank][1],
+						rot: hourrotation * cardrank,
+						onStart: function onStart() {
+							$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+				}
+				else {
+					cardrank = self.rank;
+					if (cardrank === 12) cardrank = 0;
+					if (cardrank === 13) cardrank = 12;
+					clockcards[cardrank].splice(0, 0, self);
+					clockcards[11].splice(clockcards[11].length - 1, 1);
+					clockcards[11][clockcards[11].length - 1].setSide("front");
 					self.animateTo({
 						delay: 250,
 						duration: 250,
