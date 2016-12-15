@@ -1,5 +1,5 @@
 'use strict';
-const hourrotation = 360 / 12;
+const hourrotation = 30;
 var cardposition = new Array(13);
 cardposition[0] = [0, -360];
 cardposition[1] = [180, -311];
