@@ -15,8 +15,8 @@ cardposition[10] = [-311, -180];
 cardposition[11] = [-180, -311];
 cardposition[12] = [0, 0];
 var clockcards;
-var playedcards;
 var cardrank;
+var kingsplayed = 0;
 function cardtosymbols(card) {
 	var symbols = "";
 	var symbol1 = "";
@@ -960,7 +960,7 @@ var Deck = (function () {
 		_deck4.Clock = _deck4.queued(Clock);
 		function Clock(next) {
 			clockcards = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
-			playedcards = 0;
+			kingsplayed = 0;
 			var cards = _deck4.cards;
 			var len = cards.length;
 			__fontSize = fontSize();
@@ -985,7 +985,13 @@ var Deck = (function () {
 			var xpos = pos[0];
 			var ypos = pos[1];
 			if (i < 48)  rotation = index * hourrotation;
-			else rotation = 0;
+			else {
+				rotation = 0;
+				if (_card4.rank === 13) {
+					kingsplayed = kingsplayed + 1;
+					console.log("Kingsplayed: " + kingsplayed);
+				}
+			}
 			clockcards[index].push(_card4);
 			_card4.animateTo({
 				delay: delay,
