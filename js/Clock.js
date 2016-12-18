@@ -718,6 +718,9 @@ var Deck = (function () {
 	}
 	else {
 		console.log("Kingsplayed: " + kingsplayed);
+		if (kingsplayed === 4) {
+			console.log("All kings are played");
+		}
 	}
 	e.preventDefault();
       if (e.type === 'mousedown') {
