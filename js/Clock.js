@@ -720,6 +720,36 @@ var Deck = (function () {
 		console.log("Kingsplayed: " + kingsplayed);
 		if (kingsplayed === 4) {
 			console.log("All kings are played");
+			if (self.x === 0 && self.y === -360) {
+				if (clockcards[0].length > 0) {
+					console.log("Card0: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
+			if (self.x === 180 && self.y === -311) {
+				if (clockcards[1].length > 0) {
+					console.log("Card1: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
+			if (self.x === 311 && self.y === -180) {
+				if (clockcards[2].length > 0) {
+					console.log("Card2: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
+			if (self.x === 360 && self.y === 0) {
+				if (clockcards[3].length > 0) {
+					console.log("Card3: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
+			if (self.x === 311 && self.y === 180) {
+				if (clockcards[4].length > 0) {
+					console.log("Card4: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
+			if (self.x === 180 && self.y === 311) {
+				if (clockcards[5].length > 0) {
+					console.log("Card5: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
+				}
+			}
 		}
 	}
 	e.preventDefault();
