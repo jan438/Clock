@@ -736,7 +736,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 0,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[0][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[0].splice(0, 0, clockcards[12][3]);
+					clockcards[0].splice(clockcards[0][clockcards[0].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 180 && self.y === -311) {
@@ -755,7 +771,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 1,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[1][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[1].splice(0, 0, clockcards[12][3]);
+					clockcards[1].splice(clockcards[1][clockcards[1].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 311 && self.y === -180) {
@@ -774,7 +806,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 2,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[2][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[2].splice(0, 0, clockcards[12][3]);
+					clockcards[2].splice(clockcards[2][clockcards[2].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 360 && self.y === 0) {
@@ -793,7 +841,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 3,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[3][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[3].splice(0, 0, clockcards[12][3]);
+					clockcards[3].splice(clockcards[3][clockcards[3].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 311 && self.y === 180) {
@@ -812,7 +876,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 4,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[4][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[4].splice(0, 0, clockcards[12][3]);
+					clockcards[4].splice(clockcards[4][clockcards[4].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 180 && self.y === 311) {
@@ -831,7 +911,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 5,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[5][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[5].splice(0, 0, clockcards[12][3]);
+					clockcards[5].splice(clockcards[5][clockcards[5].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === 0 && self.y === 360) {
@@ -850,7 +946,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 6,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[6][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[6].splice(0, 0, clockcards[12][3]);
+					clockcards[6].splice(clockcards[6][clockcards[6].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === -180 && self.y === 311) {
@@ -869,7 +981,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 7,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[7][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[7].splice(0, 0, clockcards[12][3]);
+					clockcards[7].splice(clockcards[7][clockcards[7].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === -311 && self.y === 180) {
@@ -888,7 +1016,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 8,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[8][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[8].splice(0, 0, clockcards[12][3]);
+					clockcards[8].splice(clockcards[8][clockcards[8].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === -360 && self.y === 0) {
@@ -907,7 +1051,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 9,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[9][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[9].splice(0, 0, clockcards[12][3]);
+					clockcards[9].splice(clockcards[9][clockcards[9].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === -311 && self.y === -180) {
@@ -926,7 +1086,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 10,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[10][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[10].splice(0, 0, clockcards[12][3]);
+					clockcards[10].splice(clockcards[10][clockcards[10].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 			if (self.x === -180 && self.y === -311) {
@@ -945,7 +1121,23 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].animateTo({
+						delay: 250,
+						duration: 250,
+						x: self.x,
+						y: self.y,
+						rot: hourrotation * 11,
+						onStart: function onStart() {
+							clockcards[12][3].$el.style.zIndex = clockcards[11][0].$el.style.zIndex - 1;
+						},
+						onComplete: function onComplete() {
+						}
+					});
+					clockcards[11].splice(0, 0, clockcards[12][3]);
+					clockcards[11].splice(clockcards[11][clockcards[11].length - 1], 1);
+					clockcards[12].splice(clockcards[12][3], 1);
 					clockcards[12].push(self);
+					kingsplayed = kingsplayed - 1;
 				}
 			}
 		}
