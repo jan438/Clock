@@ -736,6 +736,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 180 && self.y === -311) {
@@ -754,6 +755,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 311 && self.y === -180) {
@@ -772,6 +774,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 360 && self.y === 0) {
@@ -790,6 +793,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 311 && self.y === 180) {
@@ -808,6 +812,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 180 && self.y === 311) {
@@ -826,6 +831,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === 0 && self.y === 360) {
@@ -844,6 +850,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === -180 && self.y === 311) {
@@ -862,6 +869,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === -311 && self.y === 180) {
@@ -880,6 +888,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === -360 && self.y === 0) {
@@ -898,6 +907,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === -311 && self.y === -180) {
@@ -916,6 +926,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 			if (self.x === -180 && self.y === -311) {
@@ -934,6 +945,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12].push(self);
 				}
 			}
 		}
