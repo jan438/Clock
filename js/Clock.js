@@ -723,8 +723,8 @@ var Deck = (function () {
 			var zIndex = parseInt(clockcards[12][clockcards[12].length - 1].$el.style.zIndex) + 1;
 			if (self.x === 0 && self.y === -360) {
 				if (clockcards[0].length > 0) {
-					console.log("Card0: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[0][clockcards[0].length -1].setSide('front');
+					console.log("Card0: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[0][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[0][clockcards[0].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -758,8 +758,8 @@ var Deck = (function () {
 			}
 			if (self.x === 180 && self.y === -311) {
 				if (clockcards[1].length > 0) {
-					console.log("Card1: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[1][clockcards[1].length -1].setSide('front');
+					console.log("Card1: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[1][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[1][clockcards[1].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -793,8 +793,8 @@ var Deck = (function () {
 			}
 			if (self.x === 311 && self.y === -180) {
 				if (clockcards[2].length > 0) {
-					console.log("Card2: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[2][clockcards[2].length -1].setSide('front');
+					console.log("Card2: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[2][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[2][clockcards[2].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -828,8 +828,8 @@ var Deck = (function () {
 			}
 			if (self.x === 360 && self.y === 0) {
 				if (clockcards[3].length > 0) {
-					console.log("Card3: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[3][clockcards[3].length -1].setSide('front');
+					console.log("Card3: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[3][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[3][clockcards[3].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -863,8 +863,8 @@ var Deck = (function () {
 			}
 			if (self.x === 311 && self.y === 180) {
 				if (clockcards[4].length > 0) {
-					console.log("Card4: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[4][clockcards[4].length -1].setSide('front');
+					console.log("Card4: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[4][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[4][clockcards[4].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -898,8 +898,8 @@ var Deck = (function () {
 			}
 			if (self.x === 180 && self.y === 311) {
 				if (clockcards[5].length > 0) {
-					console.log("Card5: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[5][clockcards[5].length -1].setSide('front');
+					console.log("Card5: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[5][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[5][clockcards[5].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -933,8 +933,8 @@ var Deck = (function () {
 			}
 			if (self.x === 0 && self.y === 360) {
 				if (clockcards[6].length > 0) {
-					console.log("Card6: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[6][clockcards[6].length -1].setSide('front');
+					console.log("Card6: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[6][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[6][clockcards[6].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -968,8 +968,8 @@ var Deck = (function () {
 			}
 			if (self.x === -180 && self.y === 311) {
 				if (clockcards[7].length > 0) {
-					console.log("Card7: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[7][clockcards[7].length -1].setSide('front');
+					console.log("Card7: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[7][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[7][clockcards[7].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -1003,8 +1003,8 @@ var Deck = (function () {
 			}
 			if (self.x === -311 && self.y === 180) {
 				if (clockcards[8].length > 0) {
-					console.log("Card8: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[8][clockcards[8].length -1].setSide('front');
+					console.log("Card8: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[8][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[8][clockcards[8].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -1038,8 +1038,8 @@ var Deck = (function () {
 			}
 			if (self.x === -360 && self.y === 0) {
 				if (clockcards[9].length > 0) {
-					console.log("Card9: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[9][clockcards[9].length -1].setSide('front');
+					console.log("Card9: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[9][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[9][clockcards[9].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -1073,8 +1073,8 @@ var Deck = (function () {
 			}
 			if (self.x === -311 && self.y === -180) {
 				if (clockcards[10].length > 0) {
-					console.log("Card10: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[10][clockcards[10].length -1].setSide('front');
+					console.log("Card10: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[10][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[10][clockcards[10].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -1109,8 +1109,8 @@ var Deck = (function () {
 			}
 			if (self.x === -180 && self.y === -311) {
 				if (clockcards[11].length > 0) {
-					console.log("Card11: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
-					clockcards[11][clockcards[11].length -1].setSide('front');
+					console.log("Card11: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[11][0].$el.style.zIndex + " " + cardtosymbols(self));
+					clockcards[11][clockcards[11].length - 1].setSide('front');
 					self.animateTo({
 						delay: 250,
 						duration: 250,
