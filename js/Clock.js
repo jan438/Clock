@@ -744,13 +744,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 0,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[0][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[0][0].$el.style.zIndex - 1;
 					clockcards[0].splice(0, 0, clockcards[12][3]);
 					clockcards[0].pop();
+					clockcards[0][clockcards[0].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -779,13 +780,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 1,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[1][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[1][0].$el.style.zIndex - 1;
 					clockcards[1].splice(0, 0, clockcards[12][3]);
 					clockcards[1].pop();
+					clockcards[1][clockcards[1].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -814,13 +816,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 2,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[2][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[2][0].$el.style.zIndex - 1;
 					clockcards[2].splice(0, 0, clockcards[12][3]);
 					clockcards[2].pop();
+					clockcards[2][clockcards[2].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -849,13 +852,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 3,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[3][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[3][0].$el.style.zIndex - 1;
 					clockcards[3].splice(0, 0, clockcards[12][3]);
 					clockcards[3].pop();
+					clockcards[3][clockcards[3].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -884,13 +888,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 4,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[4][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[4][0].$el.style.zIndex - 1;
 					clockcards[4].splice(0, 0, clockcards[12][3]);
 					clockcards[4].pop();
+					clockcards[4][clockcards[4].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -919,13 +924,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 5,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[5][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[5][0].$el.style.zIndex - 1;
 					clockcards[5].splice(0, 0, clockcards[12][3]);
 					clockcards[5].pop();
+					clockcards[5][clockcards[5].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -954,13 +960,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 6,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[6][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[6][0].$el.style.zIndex - 1;
 					clockcards[6].splice(0, 0, clockcards[12][3]);
 					clockcards[6].pop();
+					clockcards[6][clockcards[6].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -989,13 +996,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 7,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[7][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[7][0].$el.style.zIndex - 1;
 					clockcards[7].splice(0, 0, clockcards[12][3]);
 					clockcards[7].pop();
+					clockcards[7][clockcards[7].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -1024,13 +1032,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 8,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[8][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[8][0].$el.style.zIndex - 1;
 					clockcards[8].splice(0, 0, clockcards[12][3]);
 					clockcards[8].pop();
+					clockcards[8][clockcards[8].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -1059,13 +1068,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 9,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[9][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[9][0].$el.style.zIndex - 1;
 					clockcards[9].splice(0, 0, clockcards[12][3]);
 					clockcards[9].pop();
+					clockcards[9][clockcards[9].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -1095,13 +1105,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 10,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[10][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[10][0].$el.style.zIndex - 1;
 					clockcards[10].splice(0, 0, clockcards[12][3]);
 					clockcards[10].pop();
+					clockcards[10][clockcards[10].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
@@ -1130,13 +1141,14 @@ var Deck = (function () {
 						y: self.y,
 						rot: hourrotation * 11,
 						onStart: function onStart() {
-							clockcards[12][3].$el.style.zIndex = clockcards[11][0].$el.style.zIndex - 1;
 						},
 						onComplete: function onComplete() {
 						}
 					});
+					clockcards[12][3].$el.style.zIndex = clockcards[11][0].$el.style.zIndex - 1;
 					clockcards[11].splice(0, 0, clockcards[12][3]);
 					clockcards[11].pop();
+					clockcards[11][clockcards[11].length - 1].setSide('front');
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
