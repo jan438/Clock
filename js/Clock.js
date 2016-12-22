@@ -62,6 +62,18 @@ function cardtosymbols(card) {
 	symbols = symbols + symbol1 + symbol2;
 	return symbols;
 }
+function increasekingsplayed() {
+	kingsplayed = kingsplayed + 1;
+	if (kingsplayed === 4) {
+		swal({
+			title: "<h4 id='swalallkings'>All kings are played!</h4>",
+			imageUrl: "Cards.png",
+			timer: 30000,
+			showConfirmButton: true,
+			html: true
+		});
+	}
+}
 var Deck = (function () {
   'use strict';
   var ticking;
@@ -315,7 +327,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -349,7 +361,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -383,7 +395,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -417,7 +429,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -451,7 +463,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -485,7 +497,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -519,7 +531,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -553,7 +565,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -587,7 +599,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -621,7 +633,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -655,7 +667,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
@@ -689,7 +701,7 @@ var Deck = (function () {
 					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
-						kingsplayed = kingsplayed + 1;
+						increasekingsplayed();
 					}
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
