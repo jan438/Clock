@@ -17,6 +17,7 @@ cardposition[12] = [0, 0];
 var clockcards;
 var cardrank;
 var kingsplayed = 0;
+var kingsplayedcount = 0;
 function cardtosymbols(card) {
 	var symbols = "";
 	var symbol1 = "";
@@ -65,13 +66,25 @@ function cardtosymbols(card) {
 function increasekingsplayed() {
 	kingsplayed = kingsplayed + 1;
 	if (kingsplayed === 4) {
-		swal({
-			title: "<h4 id='swalallkings'>All kings are played!</h4>",
-			imageUrl: "Cards.png",
-			timer: 30000,
-			showConfirmButton: true,
-			html: true
-		});
+		kingsplayedcount = kingsplayedcount + 1;
+		if (kingsplayedcount === 2) {
+			swal({
+				title: "<h4 id='swalgameover'>Game is over!</h4>",
+				imageUrl: "Cards.png",
+				timer: 30000,
+				showConfirmButton: true,
+				html: true
+			});
+		}
+		else {
+			swal({
+				title: "<h4 id='swalallkings'>All kings are played!</h4>",
+				imageUrl: "Cards.png",
+				timer: 30000,
+				showConfirmButton: true,
+				html: true
+			});
+		}
 	}
 }
 var Deck = (function () {
@@ -1413,6 +1426,7 @@ var Deck = (function () {
 		function Clock(next) {
 			clockcards = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
 			kingsplayed = 0;
+			kingsplayedcount = 0;
 			var cards = _deck4.cards;
 			var len = cards.length;
 			__fontSize = fontSize();
