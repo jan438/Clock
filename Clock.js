@@ -1,13 +1,14 @@
 /* global Deck */
-var prefix = Deck.prefix
-var transform = prefix('transform')
-var translate = Deck.translate
-var $container = document.getElementById('container')
-var $topbar = document.getElementById('topbar')
-var $Clock = document.createElement('button')
-$Clock.textContent = 'Clock'
-$topbar.appendChild($Clock)
-var deck = Deck()
+var prefix = Deck.prefix;
+var transform = prefix('transform');
+var translate = Deck.translate;
+var $container = document.getElementById('container');
+var $topbar = document.getElementById('topbar');
+var $Clock = document.createElement('button');
+$Clock.setAttribute("style", "background-color:Chartreuse; font-size:2em;");
+$Clock.textContent = 'Clock';
+$topbar.appendChild($Clock);
+var deck = Deck();
 $Clock.addEventListener('click', function () {
   deck.queue(function (next) {
     deck.cards.forEach(function (card, i) {
@@ -20,7 +21,7 @@ $Clock.addEventListener('click', function () {
   deck.shuffle()
   deck.shuffle()
   deck.Clock()
-})
-deck.mount($container)
-deck.intro()
-deck.sort()
+});
+deck.mount($container);
+deck.intro();
+deck.sort();
