@@ -335,7 +335,6 @@ var Deck = (function () {
 				console.log("Card0: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 				if (self.rank != 12) {
 					cardrank = self.rank;
-					if (cardrank === 12) cardrank = 0;
 					if (cardrank === 13) {
 						cardrank = 12;
 						increasekingsplayed();
