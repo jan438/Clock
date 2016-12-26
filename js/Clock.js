@@ -306,7 +306,6 @@ var Deck = (function () {
 				if (self.rank != 13) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[12].splice(clockcards[12].length - 1, 1);
@@ -324,13 +323,10 @@ var Deck = (function () {
 					});
 				}
 				else {
-					cardrank = self.rank;
-					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) cardrank = 12;
-					clockcards[cardrank].splice(0, 0, self);
+					clockcards[12].splice(0, 0, self);
 					clockcards[12].pop();
 					clockcards[12][clockcards[12].length - 1].setSide("front");
-					$el.style.zIndex = clockcards[cardrank][1].$el.style.zIndex - 1;
+					$el.style.zIndex = clockcards[12][1].$el.style.zIndex - 1;
 				}
 			}
 		}
