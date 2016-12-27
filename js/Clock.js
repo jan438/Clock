@@ -335,10 +335,7 @@ var Deck = (function () {
 				console.log("Card0: " + $el.id + " z: " + $el.style.zIndex + " " + cardtosymbols(self));
 				if (self.rank != 12) {
 					cardrank = self.rank;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[0].splice(clockcards[0].length - 1, 1);
@@ -354,6 +351,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[0].splice(0, 0, self);
@@ -369,10 +367,7 @@ var Deck = (function () {
 				if (self.rank != 1) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[1].splice(clockcards[1].length - 1, 1);
@@ -388,6 +383,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[1].splice(0, 0, self);
@@ -403,10 +399,7 @@ var Deck = (function () {
 				if (self.rank != 2) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[2].splice(clockcards[2].length - 1, 1);
@@ -422,6 +415,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[2].splice(0, 0, self);
@@ -437,10 +431,7 @@ var Deck = (function () {
 				if (self.rank != 3) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[3].splice(clockcards[3].length - 1, 1);
@@ -456,6 +447,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[3].splice(0, 0, self);
@@ -471,10 +463,7 @@ var Deck = (function () {
 				if (self.rank != 4) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[4].splice(clockcards[4].length - 1, 1);
@@ -490,6 +479,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[4].splice(0, 0, self);
@@ -505,10 +495,7 @@ var Deck = (function () {
 				if (self.rank != 5) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[5].splice(clockcards[5].length - 1, 1);
@@ -524,6 +511,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[5].splice(0, 0, self);
@@ -539,10 +527,7 @@ var Deck = (function () {
 				if (self.rank != 6) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[6].splice(clockcards[6].length - 1, 1);
@@ -558,6 +543,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[6].splice(0, 0, self);
@@ -573,10 +559,7 @@ var Deck = (function () {
 				if (self.rank != 7) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[7].splice(clockcards[7].length - 1, 1);
@@ -592,6 +575,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[7].splice(0, 0, self);
@@ -607,10 +591,7 @@ var Deck = (function () {
 				if (self.rank != 8) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[8].splice(clockcards[8].length - 1, 1);
@@ -626,6 +607,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[8].splice(0, 0, self);
@@ -641,10 +623,7 @@ var Deck = (function () {
 				if (self.rank != 9) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[9].splice(clockcards[9].length - 1, 1);
@@ -660,6 +639,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[9].splice(0, 0, self);
@@ -675,10 +655,7 @@ var Deck = (function () {
 				if (self.rank != 10) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[10].splice(clockcards[10].length - 1, 1);
@@ -694,6 +671,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[10].splice(0, 0, self);
@@ -709,10 +687,7 @@ var Deck = (function () {
 				if (self.rank != 11) {
 					cardrank = self.rank;
 					if (cardrank === 12) cardrank = 0;
-					if (cardrank === 13) {
-						cardrank = 12;
-						increasekingsplayed();
-					}
+					if (cardrank === 13) cardrank = 12;
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[11].splice(clockcards[11].length - 1, 1);
@@ -728,6 +703,7 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 12) increasekingsplayed();
 				}
 				else {
 					clockcards[11].splice(0, 0, self);
