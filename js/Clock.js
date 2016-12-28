@@ -87,6 +87,32 @@ function increasekingsplayed() {
 				html: true
 			});
 		}
+		var allcards = true;
+		for (var i = 0; i < 13; i++) {
+			if (clockcards[i][clockcards[i].length - 1].side === "back") {
+				allcards = false;
+				break;
+			}
+			for (var j = 0; j < clockcards[i].length; j++) {
+				cardrank = clockcards[i][j].rank;
+				if (cardrank === 12) cardrank = 0;
+				if (cardrank === 13) cardrank = 12;
+				if (cardrank !== i) {
+					allcards = false;
+					break;
+				}
+			}
+		}
+		if (allcards) {
+			swal({
+				title: "<h4 id='swalwelldone'>Well done!</h4>",
+				imageUrl: "Cards.png",
+				timer: 30000,
+				showConfirmButton: true,
+				html: true
+			});
+			gameover = true;
+		}
 	}
 }
 var Deck = (function () {
