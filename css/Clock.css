@@ -433,14 +433,14 @@ div#countcards4 {
 	font-family: "Alice Regular", cursive;
 	font-size: 20px;
 	left: 245px;
-	top: 92px;
+	top: 120px;
 }
 div#countcards5 {
 	position: absolute;
 	font-family: "Alice Regular", cursive;
 	font-size: 20px;
 	left: 140px;
-	top: 183px;
+	top: 230px;
 }
 div#countcards6 {
 	position: absolute;
@@ -453,15 +453,15 @@ div#countcards7 {
 	position: absolute;
 	font-family: "Alice Regular", cursive;
 	font-size: 20px;
-	left: -100px;
-	top: 183px;
+	left: -135px;
+	top: 235px;
 }
 div#countcards8 {
 	position: absolute;
 	font-family: "Alice Regular", cursive;
 	font-size: 20px;
-	left: -245px;
-	top: 92px;
+	left: -250px;
+	top: 120px;
 }
 div#countcards9 {
 	position: absolute;
@@ -489,5 +489,5 @@ div#countcards12 {
 	font-family: "Alice Regular", cursive;
 	font-size: 20px;
 	left: 0px;
-	top: 50px;
+	top: 60px;
 }
