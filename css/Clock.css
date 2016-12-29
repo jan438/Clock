@@ -400,3 +400,94 @@ h4#swalgameover {
 h4#swalwelldone {
    color: darkgreen;
 }
+div#countcards0 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 0px;
+	top: -300px;
+}
+div#countcards1 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 140px;
+	top: -260px;
+}
+div#countcards2 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 245px;
+	top: -150px;
+}
+div#countcards3 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 280px;
+	top: 0px;
+}
+div#countcards4 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 245px;
+	top: 92px;
+}
+div#countcards5 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 140px;
+	top: 183px;
+}
+div#countcards6 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 0px;
+	top: 275px;
+}
+div#countcards7 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: -100px;
+	top: 183px;
+}
+div#countcards8 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: -245px;
+	top: 92px;
+}
+div#countcards9 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: -290px;
+	top: 0px;
+}
+div#countcards10 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: -245px;
+	top: -150px;
+}
+div#countcards11 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: -140px;
+	top: -260px;
+}
+div#countcards12 {
+	position: absolute;
+	font-family: "Alice Regular", cursive;
+	font-size: 20px;
+	left: 0px;
+	top: 50px;
+}
