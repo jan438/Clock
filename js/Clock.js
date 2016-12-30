@@ -19,6 +19,7 @@ var cardrank;
 var kingsplayed = 0;
 var kingsplayedcount = 0;
 var gameover = false;
+var countcards;
 function cardtosymbols(card) {
 	var symbols = "";
 	var symbol1 = "";
@@ -1424,6 +1425,7 @@ var Deck = (function () {
 		_deck4.Clock = _deck4.queued(Clock);
 		function Clock(next) {
 			clockcards = [[],[],[],[],[],[],[],[],[],[],[],[],[]];
+			countcards = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 			kingsplayed = 0;
 			kingsplayedcount = 0;
 			gameover = false;
@@ -1450,6 +1452,11 @@ var Deck = (function () {
 			var pos = cardposition[index];
 			var xpos = pos[0];
 			var ypos = pos[1];
+			cardrank = _card4.rank;
+			if (cardrank === 12) cardrank = 0;
+			if (cardrank === 13) cardrank = 12;
+			if (cardrank === index) countcards[cardrank] = countcards[cardrank] + 1;
+			$("#countcards" + cardrank).html(countcards[cardrank]);
 			if (i < 48)  rotation = index * hourrotation;
 			else {
 				rotation = 0;
