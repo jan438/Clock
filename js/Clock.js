@@ -336,6 +336,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[12].splice(clockcards[12].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -366,6 +368,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[0].splice(clockcards[0].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -398,6 +402,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[1].splice(clockcards[1].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -430,6 +436,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[2].splice(clockcards[2].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -462,6 +470,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[3].splice(clockcards[3].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -494,6 +504,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[4].splice(clockcards[4].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -526,6 +538,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[5].splice(clockcards[5].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -558,6 +572,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[6].splice(clockcards[6].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -590,6 +606,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[7].splice(clockcards[7].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -622,6 +640,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[8].splice(clockcards[8].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -654,6 +674,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[9].splice(clockcards[9].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -686,6 +708,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[10].splice(clockcards[10].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
@@ -718,6 +742,8 @@ var Deck = (function () {
 					clockcards[cardrank].splice(0, 0, self);
 					clockcards[cardrank][clockcards[cardrank].length - 1].setSide("front");
 					clockcards[11].splice(clockcards[11].length - 1, 1);
+					countcards[cardrank] = countcards[cardrank] + 1;
+					$("#countcards" + cardrank).html(countcards[cardrank]);
 					self.animateTo({
 						delay: 250,
 						duration: 250,
