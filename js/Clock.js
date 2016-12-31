@@ -772,6 +772,9 @@ var Deck = (function () {
 		if (kingsplayed === 4 && !gameover) {
 			console.log("All kings are played");
 			var zIndex = parseInt(clockcards[12][clockcards[12].length - 1].$el.style.zIndex) + 1;
+			cardrank = self.rank;
+			if (cardrank === 12) cardrank = 0;
+			if (cardrank === 13) cardrank = 12;
 			if (self.x === 0 && self.y === -360) {
 				if (clockcards[0].length > 0) {
 					console.log("Card0: " + $el.id + " zlength: " + $el.style.zIndex + " 0: " + clockcards[0][0].$el.style.zIndex + " " + cardtosymbols(self));
@@ -788,6 +791,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 0) {
+						countcards[0] = countcards[0] - 1;
+						$("#countcards0").html(countcards[0]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -826,6 +833,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 1) {
+						countcards[1] = countcards[1] - 1;
+						$("#countcards1").html(countcards[1]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -864,6 +875,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 2) {
+						countcards[2] = countcards[2] - 1;
+						$("#countcards2").html(countcards[2]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -902,6 +917,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 3) {
+						countcards[3] = countcards[3] - 1;
+						$("#countcards3").html(countcards[3]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -940,6 +959,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 4) {
+						countcards[4] = countcards[4] - 1;
+						$("#countcards4").html(countcards[4]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -978,6 +1001,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 5) {
+						countcards[5] = countcards[5] - 1;
+						$("#countcards5").html(countcards[5]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1016,6 +1043,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 6) {
+						countcards[6] = countcards[6] - 1;
+						$("#countcards6").html(countcards[6]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1054,6 +1085,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 7) {
+						countcards[7] = countcards[7] - 1;
+						$("#countcards7").html(countcards[7]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1092,6 +1127,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 8) {
+						countcards[8] = countcards[8] - 1;
+						$("#countcards8").html(countcards[8]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1130,6 +1169,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 9) {
+						countcards[9] = countcards[9] - 1;
+						$("#countcards9").html(countcards[9]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1169,6 +1212,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 10) {
+						countcards[10] = countcards[10] - 1;
+						$("#countcards10").html(countcards[10]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
@@ -1207,6 +1254,10 @@ var Deck = (function () {
 						onComplete: function onComplete() {
 						}
 					});
+					if (cardrank === 11) {
+						countcards[11] = countcards[11] - 1;
+						$("#countcards11").html(countcards[11]);
+					}
 					clockcards[12][3].animateTo({
 						delay: 250,
 						duration: 250,
