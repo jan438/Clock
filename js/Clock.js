@@ -806,6 +806,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 180 && self.y === -311) {
@@ -842,6 +844,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 311 && self.y === -180) {
@@ -878,6 +882,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 360 && self.y === 0) {
@@ -914,6 +920,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 311 && self.y === 180) {
@@ -950,6 +958,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 180 && self.y === 311) {
@@ -986,6 +996,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === 0 && self.y === 360) {
@@ -1022,6 +1034,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === -180 && self.y === 311) {
@@ -1058,6 +1072,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === -311 && self.y === 180) {
@@ -1094,6 +1110,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === -360 && self.y === 0) {
@@ -1130,6 +1148,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === -311 && self.y === -180) {
@@ -1167,6 +1187,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 			if (self.x === -180 && self.y === -311) {
@@ -1203,6 +1225,8 @@ var Deck = (function () {
 					clockcards[12].pop();
 					clockcards[12].push(self);
 					kingsplayed = kingsplayed - 1;
+					countcards[12] = countcards[12] - 1;
+					$("#countcards12").html(countcards[12]);
 				}
 			}
 		}
